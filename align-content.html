@@ -1,10 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>align-content</title>
+    <script>
+        // document.querySelector('html').style.fontSize=(document.documentElement.clientWidth/750)*100+"px";
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            background: #2e2e2e;
+        }
+
+        .container {
+            width: 980px;
+            height: 800px;
+
+            background: #ffffff;
+            margin: 0 auto;
+            display: -webkit-flex;
+            display: flex;
+            flex-flow: row wrap;
+               /*  flex-start | flex-end | center | space-between | space-around | stretch; */
+            -webkit-align-content: space-around;
+            align-content: space-around;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            color: #ffffff;
+            font-size: 50px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .b1 {
+            background: #6ad05a;
+        }
+
+        .b2 {
+            background: #d0069b;
+        }
+
+        .b3 {
+            background: #c8d06c;
+        }
+
+        .b4 {
+            background: #229ed0;
+        }
+
+        .b5 {
+            background: #96d0cc;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="container">
+    <div class="box b1">1</div>
+    <div class="box b2">2</div>
+    <div class="box b3">3</div>
+    <div class="box b4">4</div>
+    <div class="box b5">5</div>
+    <div class="box b1">6</div>
+    <div class="box b2">7</div>
+    <div class="box b3">8</div>
+    <div class="box b4">9</div>
+    <div class="box b5">10</div>
+</div>
 </body>
 </html>
